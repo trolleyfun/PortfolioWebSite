@@ -115,3 +115,60 @@ nav {
     gap: 20px;
     margin-top: 20px;
 }
+
+/* About Me Section */
+#about-me {
+    margin: 40px auto;
+}
+#about-me > h1 {
+    color: var(--primary);
+    font-size: 30px;
+}
+#about-me > p {
+    margin-top: 10px;
+}
+.experience {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.experience > h1 {
+    color: var(--primary);
+    font-size: 80px;
+}
+.experience p {
+    font-size: 18px;
+    font-weight: bold;
+}
+.skills {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    margin-top: 20px;
+}
+.skill {
+    border-radius: 10px;
+    padding: 30px 20px;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+}
+.skill img {
+    width: 50px;
+}
+.skill > h1 {
+    font-size: 30px;
+}
+.skill-1 {
+    background: var(--gradient-1);
+}
+.skill-2 {
+    background: var(--gradient-2);
+}
+.skill-3 {
+    background: var(--gradient-3);
+}
+.skill-4 {
+    background: var(--gradient-4);
+}
