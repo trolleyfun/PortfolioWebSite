@@ -42,6 +42,13 @@ section {
 }
 
 /* Buttons */
+.btn-wrapper {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 20px;
+    margin-top: 20px;
+}
 .btn {
     display: flex;
     justify-content: center;
@@ -109,13 +116,6 @@ nav {
 }
 .header-img img {
     max-width: 90%;
-}
-.btn-wrapper {
-    display: flex;
-    justify-content: start;
-    align-items: center;
-    gap: 20px;
-    margin-top: 20px;
 }
 
 /* About Me Section */
