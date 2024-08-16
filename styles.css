@@ -307,3 +307,17 @@ nav {
 .form-wrapper textarea {
     margin-bottom: 30px;
 }
+
+/* Footer Section */
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+}
+.footer-content > p {
+    opacity: 0.6;
+}
+#footer {
+    margin: 120px auto 40px;
+}
