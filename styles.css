@@ -9,6 +9,7 @@
 :root {
     --white : #fefefe;
     --primary: #7562e0;
+    --light-grey: #55555a;
     --dark-mode-S900: #1a1a29;
     --dark-mode-S1000: #181824;
     --dark-mode-S200: #31313f;
@@ -320,4 +321,32 @@ nav {
 }
 #footer {
     margin: 120px auto 40px;
+}
+
+/* For mobile devices */
+@media only screen and (max-width: 750px) {
+/* Navigation */
+nav {
+    background-color: var(--dark-mode-S900);
+}
+.navlinks {
+    flex-direction: column;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--dark-mode-S200);
+    padding-top: 30px;
+    align-items: stretch;
+    gap: 0;
+    margin-top: -900px;
+}
+.navlinks li {
+    text-align: center;
+    padding: 20px 0;
+}
+.navlinks li:hover {
+    background-color: var(--light-grey);
+}
 }
