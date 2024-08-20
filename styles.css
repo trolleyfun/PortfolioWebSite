@@ -326,7 +326,7 @@ nav {
 .footer-content > p {
     opacity: 0.6;
 }
-#footer {
+footer {
     margin: 120px auto 40px;
 }
 
@@ -372,5 +372,18 @@ nav {
         flex-direction: column;
         gap: 30px;
         margin: 0 auto 60px;
+    }
+
+    /* Contacts Section */
+    .contacts-container {
+        flex-direction: column;
+        justify-content: start;
+        gap: 30px;
+    }
+    .form-wrapper {
+        max-width: none;
+    }
+    .social-links {
+        max-width: none;
     }
 }
