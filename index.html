@@ -13,10 +13,10 @@
             <img src="./img/Logo.svg" alt="Логотип">
         </div>
         <ul class="navlinks">
-            <li><a href="#">Главная</a></li>
-            <li><a href="#">Инструменты</a></li>
-            <li><a href="#">Проекты</a></li>
-            <li><a href="#">Контакты</a></li>
+            <li><a href="#" class="menu-items">Главная</a></li>
+            <li><a href="#" class="menu-items">Инструменты</a></li>
+            <li><a href="#" class="menu-items">Проекты</a></li>
+            <li><a href="#" class="menu-items">Контакты</a></li>
         </ul>
         <img src="img/menu.svg" alt="Меню" class="menu-btn">
     </nav>
@@ -196,5 +196,20 @@
         </footer>
     </div>
     <!-- /.container -->
+
+    <script>
+        const menuBtn = document.querySelector('.menu-btn');
+        const navLinks = document.querySelector('.navlinks');
+        const menuItems = document.querySelectorAll('.menu-items');
+
+        menuBtn.addEventListener('click', ()=>{
+            navLinks.classList.toggle('active');
+        });
+        menuItems.forEach((item) => {
+            item.addEventListener('click', ()=> {
+                navLinks.classList.toggle('active');
+            });
+        });
+    </script>
 </body>
 </html>
