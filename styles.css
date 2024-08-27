@@ -32,7 +32,7 @@ a {
     color: var(--white);
 }
 ul {
-    list-style: none;
+    list-style-position: inside;
 }
 .container {
     width: 80%;
@@ -62,7 +62,7 @@ h2 {
     justify-content: center;
     align-items: center;
     gap: 5px;
-    padding: 12px 30px;
+    padding: 8px 30px;
     border: none;
     border-radius: 5px;
     font-size: 18px;
@@ -103,6 +103,7 @@ nav {
     display: flex;
     align-items: center;
     gap: 30px;
+    list-style: none;
 }
 .navlinks a {
     font-weight: bold;
@@ -181,11 +182,11 @@ nav {
     background: var(--gradient-7);
 }
 
-/* Education Section */
-.university {
+/* Education Section & Experience Section*/
+.university, .job {
     margin-top: 15px;
 }
-.university > h1 {
+.university > h1, .job > h1 {
     font-size: 22px;
     color: var(--white);
 }
@@ -264,15 +265,6 @@ nav {
 }
 
 /* Projects Section */
-#projects > h1 {
-    color: var(--primary);
-    font-size: 30px;
-}
-#projects > p {
-    margin-top: 10px;
-    font-size: 18px;
-    font-weight: bold;
-}
 .projects-container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -294,14 +286,17 @@ nav {
     align-items: start;
     gap: 10px;
 }
-.project-content h2 {
-    font-size: 26px;
-} 
+.project-content li {
+    font-size: 0.9em;
+}
 .project img {
     width: 100%;
 }
 .project .btn-wrapper {
     justify-content: space-between;
+}
+.project .btn-right {
+    justify-content: end;
 }
 
 /* Contacts Section */
