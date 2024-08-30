@@ -204,6 +204,7 @@ nav {
 .courses-title p {
     font-weight: bold;
     font-size: 1.2em;
+    max-width: 600px;
 }
 .courses-title a {
     color: var(--primary);
@@ -313,6 +314,7 @@ nav {
 /* About Me Section */
 #about-me > p {
     margin-top: 20px;
+    max-width: 1000px;
 }
 
 /* Footer Section */
