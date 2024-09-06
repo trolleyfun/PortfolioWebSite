@@ -307,9 +307,6 @@ nav {
 .project .btn-wrapper {
     justify-content: space-between;
 }
-.project .btn-right {
-    justify-content: end;
-}
 
 /* About Me Section */
 #about-me > p {
